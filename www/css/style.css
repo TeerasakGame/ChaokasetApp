@@ -1,0 +1,27 @@
+/* Empty. Add your own CSS if you like */
+/*@font-face {
+    font-family: 'kanitthin';
+    src: url('../lib/ionic/fonts/kanit-thin-webfont.eot');
+    src: local('kanitthin'),
+         url('../lib/ionic/fonts/kanit-thin-webfont.eot') format('embedded-opentype'),
+         url('../lib/ionic/fonts/kanit-thin-webfont.woff') format('woff'),
+         url('../lib/ionic/fonts/kanit-thin-webfont.ttf') format('truetype'),
+         url('../lib/ionic/fonts/kanit-thin-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}*/
+
+@font-face {
+    font-family: 'kanitlight';
+    src: local('../lib/ionic/fonts/kanitlight'),
+         url('../lib/ionic/fonts/kanit-light-webfont.eot') format('embedded-opentype'),
+         url('../lib/ionic/fonts/kanit-light-webfont.woff') format('woff'),
+         url('../lib/ionic/fonts/kanit-light-webfont.ttf') format('truetype'),
+         url('../lib/ionic/fonts/kanit-light-webfont.svg#kanitlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*,h1,h2,h3,h4,h5,h6,.button {
+  font-family: 'kanitlight', sans-serif;
+}
