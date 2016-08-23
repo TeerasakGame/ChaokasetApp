@@ -1,0 +1,16 @@
+<ion-view view-title="จัดการแปลงเพาะปลูก">
+  <ion-content>
+  	<ion-refresher
+	    pulling-text="อัพเดตข้อมูล"
+	    on-refresh="doRefresh()">
+  	</ion-refresher>
+    <div class="card" ng-repeat="a in api">
+			<div class="item item-thumbnail-left" ui-sref="app.cropdetail">
+			  <img src="img/chaokaset_logo.png">
+			  <h2>{{a.Name}} </h2>
+			  <p>{{a.City}}</p>
+			  <p>{{a.Country}}</p>
+			</div>
+		</div>
+  </ion-content>
+</ion-view>

@@ -10,7 +10,6 @@
     font-weight: normal;
     font-style: normal;
 }*/
-
 @font-face {
     font-family: 'kanitlight';
     src: local('../lib/ionic/fonts/kanitlight'),
@@ -24,4 +23,45 @@
 
 *,h1,h2,h3,h4,h5,h6,.button {
   font-family: 'kanitlight', sans-serif;
+}
+
+.text_error{
+  color: red;
+}
+
+.my-text-datecrop {
+  font-size: 23px;
+  color: #35BE57;
+}
+.text-nameCrop {
+/*margin-top: 200px;*/
+  font-size: 28px;
+  color: #35BE57;
+}
+
+.text-green {
+  color: #35BE57;
+}
+
+label.item.has-error {
+  border-bottom: 2px solid red;
+}
+
+label.item.has-error-lr {
+  border-left: 2px solid red;
+  border-right: 2px solid red;
+}
+
+label.item.valid-lr {
+  border-left: 2px solid green;
+  border-right: 2px solid green;
+}
+
+.form-errors {
+  margin: 5px 0
+}
+
+.form-error {
+  padding: 2px 0 2px 16px;
+  color: red;
 }

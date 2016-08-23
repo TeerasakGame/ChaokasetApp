@@ -4,7 +4,8 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers'])
+//angular.module('starter', ['ionic', 'starter.controllers'])
+angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','ngCordova','ngMessages'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -45,7 +46,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: '/browse',
       views: {
         'menuContent': {
-          templateUrl: 'templates/browse.html'
+          templateUrl: 'templates/browse.html',
+          controller: 'BrowseCtrl'
         }
       }
     })
@@ -65,6 +67,42 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       'menuContent': {
         templateUrl: 'templates/playlist.html',
         controller: 'PlaylistCtrl'
+      }
+    }
+  })
+
+  .state('login', {
+    url: '/login',
+    templateUrl: 'templates/login.html',
+    controller: 'LoginCtrl'
+  })
+
+  .state('app.crop', {
+    url: '/crop',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/crop.html',
+        controller: 'CropCtrl'
+      }
+    }
+  })
+
+  .state('app.camera', {
+    url: '/camera',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/testcamera.html',
+        controller: 'CameraCtrl'
+      }
+    }
+  })
+
+  .state('app.cropdetail', {
+    url: '/cropdetail',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/cropdetail.html',
+        controller: 'CropDetailCtrl'
       }
     }
   });
